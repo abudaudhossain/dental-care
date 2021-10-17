@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "name": "DENTAL SERVICES",
+      "motto": "Teeth",
+      "image": "https://i.ibb.co/QKhshCf/shutterstock-192351722-320x200.jpg",
+      "fees": 1500,
+      "description": "A general dentist is your primary care dental provider. This dentist diagnoses, treats, and manages your overall oral health care needs, including gum care, root canals, fillings, crowns, veneers, bridges, and preventive education."
+    },
+    {
+      "id": 2,
+      "name": "IMPLANTS",
+      "motto": "If you lost yours",
+      "image": "https://i.ibb.co/5W050jp/shutterstock-227481766-320x200.jpg",
+      "fees": 1000,
+      "description": "Dental implant surgery is a procedure that replaces tooth roots with metal, screwlike posts and replaces damaged or missing teeth with artificial teeth that look and function much like real ones. Dental implant surgery can offer a welcome alternative to dentures or bridgework that doesn't fit well and can offer an option when a lack of natural teeth roots don't allow building denture or bridgework tooth replacements."
+    },
+    {
+      "id": 3,
+      "name": "DENTISTRY",
+      "motto": "Cosmetic",
+      "image": "https://i.ibb.co/s3xQC76/shutterstock-270756593-320x200.jpg",
+      "fees": 2500,
+      "description": "Dentistry, also known as dental medicine and oral medicine, is a branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity (the mouth), commonly in the dentition (development and arrangement of teeth) as well as the oral mucosa, and of adjacent and related structures and tissues, particularly in associated maxillofacial (jaw and facial) area."
+    },
+    {
+      "id": 4,
+      "name": "DENTAL BRIDGES",
+      "motto": "The best solution",
+      "image": "https://i.ibb.co/R4nBDgD/shutterstock-156787064-320x200.jpg",
+      "fees": 1500,
+      "description": "If you have missing teeth, your dentist can close — or bridge — the gaps in your smile with dental bridges. A dental bridge is a false tooth (called a pontic) that is held in place by the abutment teeth on either side of the gap. Although pontics can be made from a variety of materials such as gold, typically they’re made from porcelain to aesthetically blend in with your natural teeth."
+    },
+    {
+      "id": 5,
+      "name": "CROWNS",
+      "motto": "Painless fixes",
+      "image": "https://i.ibb.co/kcQhLQ4/shutterstock-142427935-320x200.jpg",
+      "fees": 2000,
+      "description": "Over time, your teeth can get damaged. This can happen for a variety of reasons, like tooth decay, injuries or just use over time. Your teeth can lose their shape or size. Dental crowns are tooth-shaped “caps” that can be placed over your tooth. Think of it like a snug hat for your tooth. The crown restores the tooth’s shape, size, strength and appearance."
+    },
+    {
+      "id": 6,
+      "name": "INVISALIGN",
+      "motto": "Line them all up",
+      "image": "https://i.ibb.co/M9t0CpS/shutterstock-124314160-320x200.jpg",
+      "fees": 1600,
+      "description": "Invisalign, or “invisible aligners,” is yet one of the most innovative treatments for correcting dental problems next to dental braces. With Invisalign, teeth are properly aligned to their respective place using clear guides. As the name suggests, this is almost invisible making it barely noticeable. "
+    },
+    {
+      "id": 7,
+      "name": "VENEERS",
+      "motto": "Porcelain",
+      "image": "https://i.ibb.co/LQ8rwwR/shutterstock-118733071-320x200.jpg",
+      "fees": 1400,
+      "description": "Dental veneers are thin, tooth-colored shells that are attached to the front surface of teeth to improve their appearance. They’re often made from porcelain or resin-composite materials and are permanently bonded to your teeth.Veneers can be used to treat a number of different cosmetic concerns, including chipped, broken, discolored, or smaller-than-average teeth."
+    },
+    {
+      "id": 8,
+      "name": "TEETH WHITENING",
+      "motto": "Beautify your smile",
+      "image": "https://i.ibb.co/ws031Zz/shutterstock-77455267-320x200.jpg",
+      "fees": 1200,
+      "description": "Brushing and flossing are everyday ways to keep your teeth bright, white and healthy. Still, if you might feel like your smile is lacking some sparkle or is more yellow than it used to be, you’re not alone. When the American Academy of Cosmetic Dentistry asked people what they’d most like to improve about their smile, the most common response was whiter teeth. The American Association of Orthodontists also found that nearly 90% of patients requested tooth whitening."
+    }
+]

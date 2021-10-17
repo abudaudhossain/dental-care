@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Arianna McDonald",
+        "image": "https://i.ibb.co/qFJd8Mh/pic-team-2.jpg",
+        "fees": 1500,
+         "motto": "Dentist",
+        "description": "Dentists are doctors who specialize in oral health. ... Promoting oral health and disease prevention. Creating treatment plans to maintain or restore the oral health of their patients. Interpreting x-rays and diagnostic tests."
+      },
+    {
+        "id": 2,
+        "name": "Hellen Hill",
+        "image": "https://i.ibb.co/VQ70s4D/pic-team-3.jpg",
+        "fees": 1000,
+         "motto": "Dental Surgeon",
+        "description": "Dental surgeons, also known as maxillofacial surgeons, are medical specialists within the broader field of dentistry. They perform corrective and therapeutic procedures on the mouths and jaws of their patients and often work in conjunction with other dentists, surgeons, and orthodontists."
+      },
+    {
+        "id": 3,
+        "name": "Emma Beckett",
+        "image": "https://i.ibb.co/8XT5hdf/pic-team-5.jpg",
+        "fees": 800,
+         "motto": "Dentist",
+        "description": "Dentists are doctors who specialize in oral health. ... Promoting oral health and disease prevention. Creating treatment plans to maintain or restore the oral health of their patients. Interpreting x-rays and diagnostic tests."
+      },
+    {
+        "id": 4,
+        "name": "Audrey Button",
+        "image": "https://i.ibb.co/kDtFNbn/pic-team-8.jpg",
+        "fees": 1200,
+         "motto": "Dental Surgeon",
+        "description": "Dental surgeons, also known as maxillofacial surgeons, are medical specialists within the broader field of dentistry. They perform corrective and therapeutic procedures on the mouths and jaws of their patients and often work in conjunction with other dentists, surgeons, and orthodontists."
+      }
+]
+
+
+
