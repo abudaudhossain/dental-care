@@ -1,0 +1,7 @@
+:root {
+  --primary: #23CB77;
+  --white: #ffffff;
+}
+.title{
+  color: var(--primary);
+}
