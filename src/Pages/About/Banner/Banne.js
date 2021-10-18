@@ -7,17 +7,14 @@ const Banne = () => {
     return (
         <div>
             <Container fluid="lg">
-                <Row className="h-100 d-flex align-items-center">
+                <Row className="d-flex align-items-center">
                     <Col lg="5" md={6} xs={12}>
                         <h3 className="title">About Us</h3>
                         <span style={{ width: "100px", background: "#23CB77", height: "2px", margin: "5px", display: "block" }}></span>
                         <h1 >GENERAL INFORMATION</h1>
 
                         <p className="py-3">Praesent venenatis lobortis volutpat. Curabitur ultricies ex vel mi ornare fringilla. Aenean luctus orci ac tellus rutrum posuere. Curabitur sit amet varius erat. Morbi placerat, nulla eu iaculis condimentum.</p>
-                        <Link to="services">
-                            <button className="btn btn-lg" style={{ background: "#23CB77" }}>VIEW OUR TEAM</button>
-                        </Link>
-                        <Link className="mx-5" to="services">
+                        <Link className="m-1" to="services">
                             <button className="btn btn-lg" style={{ background: "#23CB77" }}>Book A Viste</button>
                         </Link>
                     </Col>

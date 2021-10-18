@@ -1,11 +1,14 @@
 import React from 'react';
+import OurTeam from '../../Home/OurTeam/OurTeam';
 import Banne from '../Banner/Banne';
+import Values from '../Values/Values';
 
 const About = () => {
     return (
         <div>
             <Banne></Banne>
-            <h1>This is About us</h1>
+            <Values></Values>
+            <OurTeam></OurTeam>
         </div>
     );
 };
