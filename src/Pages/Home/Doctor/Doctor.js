@@ -1,16 +1,17 @@
 import React from 'react';
 import "./Doctor.css"
 
-const Doctor = () => {
+const Doctor = ({dector}) => {
+    const {name, id, image, motto} = dector;
     return (
         <div className="card-container">
             <div className="card">
                 <div className="imgBx">
-                    <img className="img-thumbnail" src="https://i.ibb.co/t3DFdcv/doktorka.png" alt=""/>
+                    <img className="img-thumbnail" src={image} alt=""/>
                 </div>
                 <div className="contentBx">
-                    <h2>Nike Shoes</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur  </p>
+                    <h2>{name}</h2>
+                    <p>{motto}{ id}</p>
                 </div>
             </div>
         </div>
