@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Col, Form, Row, Container } from 'react-bootstrap';
+import useAuth from '../../../hooks/useAuth';
 
 const BookingForm = () => {
+    const {user} = useAuth();
     const [book, setBook] = useState(null)
     const handelBooking = () => {
         setBook("You bookign is seccess")
@@ -16,11 +18,11 @@ const BookingForm = () => {
                             <Row className="mb-3">
                                 <Form.Group as={Col} controlId="formGridPassword">
                                     <Form.Label>Name</Form.Label>
-                                    <Form.Control type="text" placeholder="Enter your name" />
+                                    <Form.Control type="text" placeholder={user.displayName} />
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="formGridEmail">
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" />
+                                    <Form.Control type="email" placeholder={user.email} />
                                 </Form.Group>
                             </Row>
                             <Row className="mb-3">

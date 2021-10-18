@@ -1,10 +1,11 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../../hooks/useFirebse';
+import useAuth from '../../../hooks/useAuth';
+
 
 const Menu = () => {
-    const {user, logOut} = useFirebase();
+    const { user, logOut } = useAuth();
 
     return (
         <Navbar bg="dark" variant="dark" expand="lg">
@@ -20,8 +21,15 @@ const Menu = () => {
 
                 </Navbar.Collapse>
                 <Navbar.Text>
-                <Link to="login"><button className="btn mx-3" style={{ background: "#23CB77", color:"#fff" }}>Login</button></Link>
-                <button onClick={logOut} className="btn mx-3" style={{ background: "#23CB77", color:"#fff" }}>Log Out</button>
+                    {
+                        user.email ?
+                            <button onClick={logOut} className="btn mx-3" style={{ background: "#23CB77", color: "#fff" }}>Log Out</button>
+                            :
+                            <Link to="login">
+                                <button className="btn mx-3" style={{ background: "#23CB77", color: "#fff" }}>Login</button>
+                            </Link>
+                    }
+
                     Signed in as: <Link to="/login">{user.displayName}</Link>
                 </Navbar.Text>
             </Container>

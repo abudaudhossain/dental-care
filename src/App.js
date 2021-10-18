@@ -11,31 +11,36 @@ import DeatalsServies from './Pages/DeatalsServies/DeatalsServies';
 import AllServices from './Pages/AllServices/AllServices';
 import Login from './Pages/Login/Login';
 import NotFount from './Pages/NotFount/NotFount';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
 
+    <AuthProvider>
       <Router>
         <Header></Header>
         <Switch>
           <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route  path="/home">
+          <Route path="/home">
             <Home></Home>
           </Route>
-          <Route path="/about">
+          <PrivateRoute path="/about">
             <About></About>
-          </Route>
-          <Route path="/contact">
+          </PrivateRoute>
+          <PrivateRoute path="/contact">
             <Contact></Contact>
-          </Route>
+          </PrivateRoute>
           <Route path="/services">
             <AllServices></AllServices>
           </Route>
-          <Route path="/service/:id">
-            <DeatalsServies></DeatalsServies>
-          </Route>
+
+          <PrivateRoute path="/service/:id">
+          <DeatalsServies></DeatalsServies>
+          </PrivateRoute>
+
           <Route path="/login">
             <Login></Login>
           </Route>
@@ -45,6 +50,7 @@ function App() {
         </Switch>
         <Footer></Footer>
       </Router>
+    </AuthProvider>
 
 
 

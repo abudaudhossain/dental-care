@@ -1,8 +1,21 @@
 import React, { useState } from 'react';
-import useFirebase from '../../hooks/useFirebse';
+import { useHistory, useLocation } from 'react-router';
+import useAuth from '../../hooks/useAuth';
 import "./Login.css"
 
 const Login = () => {
+    // ====================handle authentication =====================
+    const { googleSignIn, createAccountWithEmailPassword, uerInfoUpdate, singInWithEmail, user } = useAuth();
+    const history = useHistory();
+    const location = useLocation();
+    const { from } = location.state || { from: { pathname: "/" } };
+    if (user.email) {
+        history.replace(from);
+    }
+    console.log(history, location);
+
+    // ====================handle authentication =====================
+
     //============ handleLogin area ==============
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
@@ -32,7 +45,7 @@ const Login = () => {
     const handleNewPassword = (e) => {
         setNewPassword(e.target.value)
     }
-  
+
 
     const handleNewEmail = (e) => {
         setNewEmail(e.target.value)
@@ -45,34 +58,30 @@ const Login = () => {
     }
     //============ handleSign Up area ==============
 
-    // ====================handle google sing  =====================
-    const {googleSignIn, createAccountWithEmailPassword, uerInfoUpdate, singInWithEmail} = useFirebase();
 
-    
-    // ====================handle google sing  =====================
     // console.log(userName, password);
     return (
         <div>
             <div className="login-wrap">
-                <div className="login-html">               
-                    <input id="tab-1" type="radio" name="tab" className="sign-in"/><label htmlFor ="tab-1" className="tab">Sign In</label>
-                    <input id="tab-2" type="radio" name="tab" className="sign-up" /><label htmlFor ="tab-2" className="tab">Sign Up</label>
-                    
+                <div className="login-html">
+                    <input id="tab-1" type="radio" name="tab" className="sign-in" /><label htmlFor="tab-1" className="tab">Sign In</label>
+                    <input id="tab-2" type="radio" name="tab" className="sign-up" /><label htmlFor="tab-2" className="tab">Sign Up</label>
+
                     <div className="login-form">
-                        
+
                         {/* ===========Login area star  =================*/}
                         <div className="sign-in-htm">
                             <div className="group">
-                                <label htmlFor ="user" className="label">Username</label>
+                                <label htmlFor="user" className="label">Username</label>
                                 <input onChange={handleUser} id="user" type="text" className="input" />
                             </div>
                             <div className="group">
-                                <label htmlFor ="pass" className="label">Password</label>
+                                <label htmlFor="pass" className="label">Password</label>
                                 <input onChange={handlePassword} id="pass" type="password" className="input" data-type="password" />
                             </div>
                             <div className="group">
                                 <input id="check" type="checkbox" className="check" checked />
-                                <label htmlFor ="check"><span className="icon"></span> Keep me Signed in</label>
+                                <label htmlFor="check"><span className="icon"></span> Keep me Signed in</label>
                             </div>
                             <div className="group">
                                 <input onClick={handleLogin} type="submit" className="button" value="Sign In" />
@@ -87,17 +96,17 @@ const Login = () => {
                         {/* ===========Sign up area star  =================*/}
                         <div className="sign-up-htm">
                             <div className="group">
-                                <label htmlFor ="user" className="label">Username</label>
+                                <label htmlFor="user" className="label">Username</label>
                                 <input onChange={handleNewUsername} id="user" type="text" className="input" />
                             </div>
                             <div className="group">
-                                <label htmlFor ="pass" className="label">Password</label>
-                                <input onChange ={handleNewPassword} id="pass" type="password" className="input" data-type="password" />
+                                <label htmlFor="pass" className="label">Password</label>
+                                <input onChange={handleNewPassword} id="pass" type="password" className="input" data-type="password" />
                             </div>
-                            
+
                             <div className="group">
-                                <label htmlFor ="email" className="label">Email Address</label>
-                                <input onChange ={handleNewEmail} id="email" type="email" className="input" />
+                                <label htmlFor="email" className="label">Email Address</label>
+                                <input onChange={handleNewEmail} id="email" type="email" className="input" />
                             </div>
                             <div className="group">
                                 <input onClick={handleSignUp} type="submit" className="button" value="Sign Up" />
@@ -105,10 +114,10 @@ const Login = () => {
                             <div className="hr"></div>
                             <button className="btn btn-danger m-3"><i className="fab fa-google-plus-g"></i> Login With Goole</button>
                             <div className="foot-lnk">
-                                <label htmlFor ="tab-1">Already Member?</label>
+                                <label htmlFor="tab-1">Already Member?</label>
                             </div>
                         </div>
-                        
+
                         {/* ===========Sign area End  =================*/}
                     </div>
                 </div>
