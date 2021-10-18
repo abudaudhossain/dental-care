@@ -9,3 +9,9 @@ p{
   color: var(--secondary);
   font-size: 18px;
 }
+
+@media only screen and (max-width: 800px) { 
+  .my-text{
+      text-align : center;
+  }
+}

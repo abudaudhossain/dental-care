@@ -12,8 +12,8 @@ const Banner = () => {
                    <p>Dental care is the maintenance of healthy teeth and may refer to: Oral hygiene, the practice of keeping the mouth and teeth clean in order to prevent dental disorders</p>
                    <button className="btn btn-lg" style={{background: "#23CB77"}}>Book A Viste</button>
                 </Col>
-                <Col  lg="7" md={6} xs={12}>
-                <Image className="banner-img" style={{height:"80vh"}} src={banner}  fluid />
+                <Col  lg="7" md={6} xs={12} className="d-flex justify-content-center">
+                <Image  style={{height:"80vh"}} src={banner}  fluid />
                 </Col>
             </Row>
         </Container>
