@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useFirebase from '../../hooks/useFirebse';
 import "./Login.css"
 
 const Login = () => {
@@ -8,6 +9,7 @@ const Login = () => {
 
     const handleLogin = () => {
         console.log(userName, password);
+        singInWithEmail(userName, password);
     }
 
     const handleUser = (e) => {
@@ -38,8 +40,16 @@ const Login = () => {
 
     const handleSignUp = () => {
         console.log(newUsername, newPassword, newEmail)
+        createAccountWithEmailPassword(newEmail, newPassword);
+        uerInfoUpdate(newUsername);
     }
     //============ handleSign Up area ==============
+
+    // ====================handle google sing  =====================
+    const {googleSignIn, createAccountWithEmailPassword, uerInfoUpdate, singInWithEmail} = useFirebase();
+
+    
+    // ====================handle google sing  =====================
     // console.log(userName, password);
     return (
         <div>
@@ -68,7 +78,7 @@ const Login = () => {
                                 <input onClick={handleLogin} type="submit" className="button" value="Sign In" />
                             </div>
                             <div className="hr"></div>
-                            <button className="btn btn-danger m-3"><i className="fab fa-google-plus-g"></i> Login With Goole</button>
+                            <button onClick={googleSignIn} className="btn btn-danger m-3"><i className="fab fa-google-plus-g"></i> Login With Goole</button>
                             <div className="foot-lnk">
                                 <a href="#forgot">Forgot Password?</a>
                             </div>

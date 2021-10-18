@@ -1,8 +1,11 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useFirebase from '../../../hooks/useFirebse';
 
 const Menu = () => {
+    const {user, logOut} = useFirebase();
+
     return (
         <Navbar bg="dark" variant="dark" expand="lg">
             <Container>
@@ -18,7 +21,8 @@ const Menu = () => {
                 </Navbar.Collapse>
                 <Navbar.Text>
                 <Link to="login"><button className="btn mx-3" style={{ background: "#23CB77", color:"#fff" }}>Login</button></Link>
-                    Signed in as: <Link to="/login">Mark Otto</Link>
+                <button onClick={logOut} className="btn mx-3" style={{ background: "#23CB77", color:"#fff" }}>Log Out</button>
+                    Signed in as: <Link to="/login">{user.displayName}</Link>
                 </Navbar.Text>
             </Container>
         </Navbar>
