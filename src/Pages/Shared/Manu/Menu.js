@@ -17,6 +17,7 @@ const Menu = () => {
 
                 </Navbar.Collapse>
                 <Navbar.Text>
+                <Link to="login"><button className="btn mx-3" style={{ background: "#23CB77", color:"#fff" }}>Login</button></Link>
                     Signed in as: <Link to="/login">Mark Otto</Link>
                 </Navbar.Text>
             </Container>

@@ -9,6 +9,8 @@ import About from './Pages/About/About/About';
 import Contact from './Pages/Contact/Contact/Contact';
 import DeatalsServies from './Pages/DeatalsServies/DeatalsServies';
 import AllServices from './Pages/AllServices/AllServices';
+import Login from './Pages/Login/Login';
+import NotFount from './Pages/NotFount/NotFount';
 
 function App() {
   return (
@@ -33,6 +35,12 @@ function App() {
           </Route>
           <Route path="/service/:id">
             <DeatalsServies></DeatalsServies>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="*">
+            <NotFount></NotFount>
           </Route>
         </Switch>
         <Footer></Footer>
