@@ -1,11 +1,12 @@
 import React from 'react';
 import TeamLeader from '../TeamLeader/TeamLeader';
+import Doctors from '../Doctors/Doctors';
 
 const OurTeam = () => {
     return (
         <div>
             <TeamLeader></TeamLeader>
-            <h1>Our team </h1>
+            <Doctors></Doctors>
         </div>
     );
 };
