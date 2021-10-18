@@ -1,9 +1,12 @@
 import React from 'react';
+import Banner from '../Banner/Banner';
+import BookingForm from '../BookingForm/BookingForm';
 
 const Contact = () => {
     return (
         <div>
-            <h1>This is contact us</h1>
+            <Banner></Banner>
+            <BookingForm></BookingForm>
         </div>
     );
 };

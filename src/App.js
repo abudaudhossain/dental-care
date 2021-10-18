@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import About from './Pages/About/About/About';
 import Contact from './Pages/Contact/Contact/Contact';
 import DeatalsServies from './Pages/DeatalsServies/DeatalsServies';
-import Services from './Pages/Services/Services';
+import AllServices from './Pages/AllServices/AllServices';
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
             <Contact></Contact>
           </Route>
           <Route path="/services">
-            <Services></Services>
+            <AllServices></AllServices>
           </Route>
           <Route path="/service/:id">
             <DeatalsServies></DeatalsServies>
