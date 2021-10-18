@@ -3,10 +3,10 @@ import { useEffect, useState } from "react"
 const useFackData = () => {
 
     const useServices = () => {
-        const [services, serServices] = useState();
+        const [services, serServices] = useState([]);
 
         useEffect(() => {
-            fetch('./services.json')
+            fetch('/services.json')
                 .then(res => res.json())
                 .then(data => {
                     serServices(data);

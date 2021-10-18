@@ -12,7 +12,7 @@
   transition: top 0.5s;
 
 }
-.container .card:hover {
+.card-container .card:hover {
     top: -15px;
     transition-delay: 0.5s;
 }

@@ -17,7 +17,7 @@ const Menu = () => {
 
                 </Navbar.Collapse>
                 <Navbar.Text>
-                    Signed in as: <Link href="/login">Mark Otto</Link>
+                    Signed in as: <Link to="/login">Mark Otto</Link>
                 </Navbar.Text>
             </Container>
         </Navbar>
