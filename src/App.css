@@ -1,7 +1,11 @@
 :root {
   --primary: #23CB77;
-  --white: #ffffff;
+  --secondary: #363a4d;
 }
 .title{
   color: var(--primary);
+}
+p{
+  color: var(--secondary);
+  font-size: 18px;
 }
