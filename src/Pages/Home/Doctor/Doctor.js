@@ -1,20 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./Doctor.css"
 
-const Doctor = ({dector}) => {
-    const {name, id, image, motto} = dector;
+const Doctor = ({ dector }) => {
+    const { name,image, motto } = dector;
     return (
-        <div className="card-container">
-            <div className="card">
-                <div className="imgBx">
-                    <img className="img-thumbnail" src={image} alt=""/>
-                </div>
-                <div className="contentBx">
-                    <h2>{name}</h2>
-                    <p>{motto}{ id}</p>
+        <Link to="services">
+            <div className="card-container">
+                <div className="card">
+                    <div className="imgBx">
+                        <img className="img-thumbnail" src={image} alt="" />
+                    </div>
+                    <div className="contentBx">
+                        <h2>{name}</h2>
+                        <p>{motto}</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
