@@ -29,7 +29,7 @@ const useFackData = () => {
                     console.log(err.message);
                 })
 
-               
+
         }, [])
 
         return doctors;

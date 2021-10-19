@@ -6,8 +6,8 @@ import TopNavbar from '../TopNavbar/TopNavbar';
 const Header = () => {
     return (
         <div>
-           <TopNavbar></TopNavbar>
-           <Menu></Menu>
+            <TopNavbar></TopNavbar>
+            <Menu></Menu>
         </div>
     );
 };

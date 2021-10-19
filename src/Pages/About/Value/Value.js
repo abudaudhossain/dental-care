@@ -1,9 +1,9 @@
 import React from 'react';
 import './Value.css'
 
-const Value = ({title,logo, description}) => {
+const Value = ({ title, logo, description }) => {
     return (
-        
+
         <div className="d-flex p-3">
             <div className="logo">
                 <i className={logo}></i>
@@ -13,7 +13,7 @@ const Value = ({title,logo, description}) => {
                 <p>{description}</p>
             </div>
         </div>
-    
+
     );
 };
 

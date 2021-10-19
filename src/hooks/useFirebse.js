@@ -18,6 +18,7 @@ const useFirebase = () => {
             .then(result => {
                 setUser(result.user);
                 setIsloading(false);
+                setError("");
             }).catch(error => {
                 setError(error.message);
                 setIsloading(false);
@@ -26,24 +27,13 @@ const useFirebase = () => {
     }
 
 
-    useEffect(() => {
-        onAuthStateChanged(auth, user => {
-            if (user) {
-                setUser(user);
-                setIsloading(false)
-            } else {
-                setUser({});
-                setIsloading(false);
-            }
-        });
-
-    }, [])
-
-
-    const createAccountWithEmailPassword = (email, password) => {
+    const createAccountWithEmailPassword = (email, password, name) => {
         createUserWithEmailAndPassword(auth, email, password)
-            .then(() => {
+            .then((result) => {
                 setIsloading(false);
+                uerInfoUpdate(name);
+                setUser(result.user);
+                setError("");
             }).catch(error => {
                 console.log(error.message)
             })
@@ -52,9 +42,11 @@ const useFirebase = () => {
     const uerInfoUpdate = (name) => {
         updateProfile(auth.currentUser, {
             displayName: name
-        }).then((result) => {
+        }).then(() => {
             // Profile updated!
-            console.log("profile updated")
+            setUser(auth.currentUser);
+            window.location.reload();
+            setError("");
             // ...
         }).catch((error) => {
             console.log(error.message)
@@ -66,10 +58,12 @@ const useFirebase = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 // Signed in 
-                setUser(result.user)
+                setUser(result.user);
+                console.log(result.user);
+                setError("");
                 // ...
             })
-            .catch((error) => {              
+            .catch((error) => {
                 setError(error.message);
                 console.log(error.message)
             });
@@ -82,12 +76,28 @@ const useFirebase = () => {
             console.log("Sign-out successful.");
             setUser({})
             setIsloading(false);
+            setError("");
         }).catch((error) => {
             // An error happened.
             setError(error.message)
-            console.log("Sign-out not successful.")
+            console.log("Sign-out not successful.");
+            setError("");
         });
     }
+
+    useEffect(() => {
+        onAuthStateChanged(auth, user => {
+            if (user) {
+                setUser(user);
+                setIsloading(false);
+                setError("");
+            } else {
+                setUser({});
+                setIsloading(false);
+            }
+        });
+
+    }, [])
 
     return {
         user,

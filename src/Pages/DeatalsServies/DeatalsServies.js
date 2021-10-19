@@ -24,14 +24,14 @@ const DeatalsServies = () => {
     return (
         <div className="p-5">
             {
-                book ? 
-               <>
-                <h1>{book}</h1>
-                <Link to ="/home">
-                    <Button className="btn" style={{ background: "#23CB77" }}>Back Home</Button>
-                </Link>
-               </>
-                 :
+                book ?
+                    <>
+                        <h1>{book}</h1>
+                        <Link to="/home">
+                            <Button className="btn" style={{ background: "#23CB77" }}>Back Home</Button>
+                        </Link>
+                    </>
+                    :
                     <Container className="d-flex justify-content-center m-5">
                         <Card style={{ width: '50%' }}>
                             <Card.Img variant="top" src={image} />

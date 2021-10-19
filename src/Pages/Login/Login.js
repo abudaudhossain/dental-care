@@ -5,14 +5,14 @@ import "./Login.css"
 
 const Login = () => {
     // ====================handle authentication =====================
-    const { googleSignIn, createAccountWithEmailPassword, uerInfoUpdate, singInWithEmail, user } = useAuth();
+    const { googleSignIn, createAccountWithEmailPassword, uerInfoUpdate, singInWithEmail, user, error } = useAuth();
     const history = useHistory();
     const location = useLocation();
     const { from } = location.state || { from: { pathname: "/" } };
     if (user.email) {
         history.replace(from);
     }
-    console.log(history, location);
+
 
     // ====================handle authentication =====================
 
@@ -21,7 +21,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
 
     const handleLogin = () => {
-        console.log(userName, password);
+        // console.log(userName, password);
         singInWithEmail(userName, password);
     }
 
@@ -52,8 +52,8 @@ const Login = () => {
     }
 
     const handleSignUp = () => {
-        console.log(newUsername, newPassword, newEmail)
-        createAccountWithEmailPassword(newEmail, newPassword);
+        // console.log(newUsername, newPassword, newEmail)
+        createAccountWithEmailPassword(newEmail, newPassword, newUsername);
         uerInfoUpdate(newUsername);
     }
     //============ handleSign Up area ==============
@@ -62,7 +62,9 @@ const Login = () => {
     // console.log(userName, password);
     return (
         <div>
+            <h2 className="text-danger">{error}</h2>
             <div className="login-wrap">
+
                 <div className="login-html">
                     <input id="tab-1" type="radio" name="tab" className="sign-in" /><label htmlFor="tab-1" className="tab">Sign In</label>
                     <input id="tab-2" type="radio" name="tab" className="sign-up" /><label htmlFor="tab-2" className="tab">Sign Up</label>

@@ -3,7 +3,7 @@ import { Col, Form, Row, Container } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
 
 const BookingForm = () => {
-    const {user} = useAuth();
+    const { user } = useAuth();
     const [book, setBook] = useState(null)
     const handelBooking = () => {
         setBook("You bookign is seccess")
@@ -12,7 +12,7 @@ const BookingForm = () => {
         <div className="my-5">
             <h1 className="text-center">Request Consultation Online</h1>
             {
-                book ? <h1>{book}</h1>:
+                book ? <h1>{book}</h1> :
                     <Container>
                         <Form>
                             <Row className="mb-3">

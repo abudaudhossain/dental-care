@@ -16,7 +16,7 @@ const Footer = () => {
                                     <i className="fas fa-gem me-3"></i>Dental Care
                                 </h6>
                                 <p>
-                                Dental care is the maintenance of healthy teeth and may refer to: Oral hygiene, the practice of keeping the mouth and teeth clean in order to prevent dental disorders
+                                    Dental care is the maintenance of healthy teeth and may refer to: Oral hygiene, the practice of keeping the mouth and teeth clean in order to prevent dental disorders
                                 </p>
                             </div>
 
