@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -15,27 +16,26 @@ const Footer = () => {
                                     <i className="fas fa-gem me-3"></i>Dental Care
                                 </h6>
                                 <p>
-                                    Here you can use rows and columns to organize your footer content. Lorem ipsum
-                                    dolor sit amet, consectetur adipisicing elit.
+                                Dental care is the maintenance of healthy teeth and may refer to: Oral hygiene, the practice of keeping the mouth and teeth clean in order to prevent dental disorders
                                 </p>
                             </div>
 
                             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                                 {/* <!-- Links --> */}
                                 <h6 className="text-uppercase fw-bold mb-4">
-                                    Servise
+                                    Our Servise
                                 </h6>
                                 <p>
-                                    <a href="#!" className="text-reset">IMPLANTS</a>
+                                    <Link to="/service/2" className="text-reset">IMPLANTS</Link>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">CROWNS</a>
+                                    <Link to="/service/5" className="text-reset">CROWNS</Link>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">INVISALIGN</a>
+                                    <Link to="/service/6" className="text-reset">INVISALIGN</Link>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">VENEERS</a>
+                                    <Link to="/service/7" className="text-reset">VENEERS</Link>
                                 </p>
                             </div>
 
@@ -45,23 +45,23 @@ const Footer = () => {
                                     Useful links
                                 </h6>
                                 <p>
-                                    <a href="#!" className="text-reset">Home</a>
+                                    <Link to="/home" className="text-reset">Home</Link>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">Service</a>
+                                    <Link to="/services" className="text-reset">Service</Link>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">About Us</a>
+                                    <Link to="/about" className="text-reset">About Us</Link>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">Contact</a>
+                                    <Link to="/contact" className="text-reset">Contact</Link>
                                 </p>
                             </div>
 
                             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                                 {/* <!-- Links --> */}
                                 <h6 className="text-uppercase fw-bold mb-4">
-                                    Contact
+                                    Contact Us
                                 </h6>
                                 <p><i className="fas fa-home me-3"></i>Kurigram, RK 10012, BD</p>
                                 <p>

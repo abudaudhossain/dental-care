@@ -112,7 +112,7 @@ const Login = () => {
                                 <input onClick={handleSignUp} type="submit" className="button" value="Sign Up" />
                             </div>
                             <div className="hr"></div>
-                            <button className="btn btn-danger m-3"><i className="fab fa-google-plus-g"></i> Login With Goole</button>
+                            <button onClick={googleSignIn} className="btn btn-danger m-3"><i className="fab fa-google-plus-g"></i> Login With Goole</button>
                             <div className="foot-lnk">
                                 <label htmlFor="tab-1">Already Member?</label>
                             </div>
