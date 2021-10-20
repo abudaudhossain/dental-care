@@ -9,10 +9,11 @@ import About from './Pages/About/About/About';
 import Contact from './Pages/Contact/Contact/Contact';
 import DeatalsServies from './Pages/DeatalsServies/DeatalsServies';
 import AllServices from './Pages/AllServices/AllServices';
-import Login from './Pages/Login/Login';
+
 import NotFount from './Pages/NotFount/NotFount';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+import Login from './Pages/Login/Login/Login';
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
           </PrivateRoute>
 
           <Route path="/login">
-            <Login></Login>
+            <Login ></Login>
           </Route>
           <Route path="*">
             <NotFount></NotFount>
