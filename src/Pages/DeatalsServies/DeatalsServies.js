@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Container, Spinner, Button } from 'react-bootstrap';
+import { Card, Container, Spinner, Button, Row, Col } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import useFackData from '../../hooks/useFackData';
@@ -32,19 +32,26 @@ const DeatalsServies = () => {
                         </Link>
                     </>
                     :
-                    <Container className="d-flex justify-content-center m-5">
-                        <Card style={{ width: '50%' }}>
-                            <Card.Img variant="top" src={image} />
-                            <Card.Body>
-                                <h6>{motto}</h6>
-                                <Card.Title>{name}</Card.Title>
-                                <Card.Text>
-                                    {description}
-                                </Card.Text>
-                                <p className="font-weight-bold h5">fees:{fees}</p>
-                                <Button onClick={handleBooke} variant="primary">Book Now</Button>
-                            </Card.Body>
-                        </Card>
+                    <Container className="d-flex justify-content-center my-5">
+                        <Row>
+                            <Col></Col>
+                            <Col lg={8} sm={12}>
+                                <Card className="w-100">
+                                    <Card.Img variant="top" src={image} />
+                                    <Card.Body>
+                                        <h6>{motto}</h6>
+                                        <Card.Title>{name}</Card.Title>
+                                        <Card.Text>
+                                            {description}
+                                        </Card.Text>
+                                        <p className="font-weight-bold h5">fees:{fees}</p>
+                                        <Button onClick={handleBooke} variant="primary">Book Now</Button>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col></Col>
+                        </Row>
+
                     </Container>
             }
 
