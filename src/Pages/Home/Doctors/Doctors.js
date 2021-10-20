@@ -14,7 +14,7 @@ const Dectors = () => {
                 <Row>
                     {
                         doctors ? 
-                        doctors.map(dector => <Col key={dector.id}
+                        doctors.map(dector => <Col lg={3} md={6} sm={6} key={dector.id}
                             >
                                 <Doctor dector = {dector}></Doctor>
                             </Col> )

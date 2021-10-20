@@ -6,7 +6,7 @@ const Doctor = ({ dector }) => {
     const { name,image, motto } = dector;
     return (
         <Link to="services">
-            <div className="card-container">
+            <div className="card-container my-3">
                 <div className="card">
                     <div className="imgBx">
                         <img className="img-thumbnail" src={image} alt="" />
