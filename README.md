@@ -1,14 +1,10 @@
 # Dental Care
-Dental care is the maintenance of healthy teeth and may refer to: Oral hygiene, the practice of keeping the mouth and teeth clean in order to prevent dental disorders.
+Dental care is a user-friendly website, users see to here dentists and medical services. users can be booking any service. It is fully responsive with a modern and clean design, unlimited color options, and an easy-to-use page builder.
 
-Praesent venenatis lobortis volutpat. Curabitur ultricies ex vel mi ornare fringilla. Aenean luctus orci ac tellus rutrum posuere. Curabitur sit amet varius erat. Morbi placerat, nulla eu iaculis condimentum.
-
-FREE Dental Chat with dentists or live virtual Teledental video consulting talk with a dentist. Get local emergency dental questions answers online.
-
-## Improtent Link
+## Important Link
 
 My awesome Dental Care Web site live link [Dental Care](https://dental-care-4d3d8.web.app/)
-Also see my Dental Care Website Code [Dental Care code](https://github.com/Programming-Hero-Web-Course3/healthcare-related-website-abudaudhossain)
+Also see my Dental Care Website Code [Dental Care code](https://github.com/abudaudhossain/dental-care)
 
 ## Features and Functionality of My Website:
 * Firebase Authentication
